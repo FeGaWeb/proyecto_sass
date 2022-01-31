@@ -493,57 +493,6 @@ footer {
 
         }
 
-        .contenedor_10 {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding-top: 80px;
-            color: #fff;
-
-            .skills_c10 {
-                width: 100%;
-                height: 60px;
-                color: #000;
-                font-size: 30px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-evenly;
-                align-items: center;
-                margin-bottom: 15px;
-
-            }
-
-            .skills {
-                width: 100%;
-                height: 100%;
-                padding-top: 25px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-items: flex-start;
-
-                .card {
-                    margin-top: 20px;
-
-                    & img {
-                        width: 40%;
-                        height: auto;
-                        align-self: center;
-                        padding-top: 10px;
-                    }
-
-                    & h4 {
-                        color: #000;
-                        text-align: center;
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -899,7 +848,7 @@ footer {
         height: 30%;
 
         .texto_c4 {
-            padding-bottom: 40px;
+            padding-bottom: 70px;
 
             & p {
                 width: 100%;
@@ -912,39 +861,12 @@ footer {
         }
     }
 
-    .contenedor_10 {
-        width: 100%;
-        height: 1600px;
-        margin: 40px 0px 0px 0px;
-
-        & h2{
-            text-align: center;
-            font-size: 30px;
-            font-weight: 900;
-        }
-
-        .skills{
-            width: 100%;
-            height: 100%;
-            padding-top: 35px;
-
-            .card{
-                align-self: center;
-                height: 200px;
-                margin-top: 15px;
-
-                & img{
-                    width: 30%;
-                    padding-top: 10px;
-                    align-self: center;
-                }
-
-                & h4{
-                    text-align: center;
-                }
-            }
+    .titulo_c6 {
+        h4 {
+            display: none;
         }
     }
+
 }
 
 @media screen and (max-width:468px) {
@@ -1126,45 +1048,6 @@ footer {
 
         }
 
-        .contenedor_10 {
-            width: 100%;
-            height: 1600px;
-            margin: 40px 0px 0px 0px;
-    
-            & h2{
-                text-align: center;
-                font-size: 30px;
-                font-weight: 900;
-            }
-    
-            .skills{
-                width: 100%;
-                height: 100%;
-                padding-top: 35px;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                justify-content: center;
-                align-content: center;
-            
-    
-                .card{
-                    align-self: center;
-                    height: 200px;
-                    margin-top: 15px;
-    
-                    & img{
-                        width: 30%;
-                        padding-top: 10px;
-                        align-self: center;
-                    }
-    
-                    & h4{
-                        text-align: center;
-                    }
-                }
-            }
-        }
     }
 
 
@@ -1616,45 +1499,7 @@ footer {
             }
         }
 
-        .contenedor_10 {
-            width: 100%;
-            height: 1600px;
-            margin: 40px 0px 0px 0px;
-    
-            & h2{
-                text-align: center;
-                font-size: 30px;
-                font-weight: 900;
-            }
-    
-            .skills{
-                width: 100%;
-                height: 100%;
-                padding-top: 35px;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                justify-content: center;
-                align-content: center;
-            
-    
-                .card{
-                    align-self: center;
-                    height: 200px;
-                    margin-top: 15px;
-    
-                    & img{
-                        width: 30%;
-                        padding-top: 10px;
-                        align-self: center;
-                    }
-    
-                    & h4{
-                        text-align: center;
-                    }
-                }
-            }
-        }
+
     }
 
 
@@ -2095,45 +1940,7 @@ footer {
             }
         }
 
-        .contenedor_10 {
-            width: 100%;
-            height: 1600px;
-            margin: 40px 0px 0px 0px;
-    
-            & h2{
-                text-align: center;
-                font-size: 30px;
-                font-weight: 900;
-            }
-    
-            .skills{
-                width: 100%;
-                height: 100%;
-                padding-top: 35px;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                justify-content: center;
-                align-content: center;
-            
-    
-                .card{
-                    align-self: center;
-                    height: 200px;
-                    margin-top: 15px;
-    
-                    & img{
-                        width: 30%;
-                        padding-top: 10px;
-                        align-self: center;
-                    }
-    
-                    & h4{
-                        text-align: center;
-                    }
-                }
-            }
-        }
+
     }
 
 
@@ -2557,7 +2364,7 @@ footer {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        padding-right: 150px;
+        padding-right: 15px;
     }
 
     .img_3d {
@@ -2566,7 +2373,7 @@ footer {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        padding-right: 115px;
+        padding-right: 15px;
     }
 
     .img_seo {
@@ -2575,7 +2382,7 @@ footer {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        padding-right: 150px;
+        padding-right: 15px;
     }
 
     .service_branding {
@@ -2587,7 +2394,7 @@ footer {
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
-            padding-right: 150px;
+            padding-right: 15px;
             padding-top: 20px;
         }
     }
@@ -2596,61 +2403,16 @@ footer {
         width: 75%;
     }
 
-    .contenedor_10xl {
-        width: 100%;
-        height: 800px !important;
-        margin: 40px 0px 0px 0px;
-        background-color: #7477A1;
 
-        h2{
-            width: 100%;
-            text-align: center;
-            font-size: 30px;
-            font-weight: 900;
-        }
-
-        .skills-xl{
-
-            width: 100%;
-            height: 100%;
-            padding-top: 35px;
-            display: flex;
-            flex-direction: row !important;
-            flex-wrap: wrap !important;
-            justify-content: space-evenly !important;
-        
-
-            .card-xl{
-                width: 30%;
-                align-self: center;
-                height: 180px !important;
-                margin-top: 15px;
-
-                img{
-                    width: 30%;
-                    padding-top: 10px;
-                    align-self: center;
-                }
-
-                h4{
-                    text-align: center;
-                }
-            }
-        }
-    }
 
     /*******footer*******/
 
     .footer_xl {
-        margin-top: 150px;
+        margin-top: 30px;
     }
 }
 
 @media screen and (min-width:1024px) {
-
-    .card {
-        box-shadow: 5px 5px 5px #C1C1C1;
-    }
 
     .main_home {
         width: 600px;
@@ -2679,9 +2441,9 @@ footer {
 
     .main_about {
         width: 100%;
-        height: 2900px;
+        height: 2600px;
         padding: 15px 0px;
-        margin-bottom: 80px;
+        margin-bottom: 0px;
 
         .contenedor_about {
             width: 100%;
@@ -2877,29 +2639,6 @@ footer {
 
             }
 
-            .contenedor_10xl {
-                width: 100%;
-                height: 500px;
-                padding-top: 10px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: center;
-
-                .skills_c10 {
-                    width: 100%;
-                    margin: 0px;
-                }
-
-                .skills {
-                    width: 100%;
-                    height: 100%;
-
-                    & h2 {
-                        font-size: 25px;
-                    }
-                }
-            }
         }
     }
 
@@ -3036,6 +2775,8 @@ footer {
 
     /*****************seccion servicios***********************************/
 
+    
+      
     .responsive_service_main {
         width: 100%;
         height: 100%;
@@ -3073,7 +2814,7 @@ footer {
                     align-items: center;
 
                     & img {
-                        width: 100%;
+                        width: 70%;
                         height: auto;
                     }
                 }
@@ -3317,9 +3058,6 @@ footer {
 
 @media screen and (min-width:1200px) {
 
-    .card {
-        box-shadow: 5px 5px 5px #C1C1C1;
-    }
 
     .header_home {
         width: 100%;
@@ -3330,7 +3068,7 @@ footer {
         background-size: cover;
     }
 
-    
+
     .main_home {
         margin-left: 150px;
         width: 100px;
@@ -3493,182 +3231,179 @@ footer {
 
     .main_about {
         margin-bottom: 150px;
-    }
 
-    .contenedor_about {
-        padding-top: 0px;
-    }
+        .contenedor_about {
+            padding-top: 0px;
 
-    .contenedor_10 {
-        padding-top: 0px;
-        width: 100%;
-        height: 100%;
-        padding: 20px 0px 80px 0px;
-    }
+            .contenedor_4 {
+                width: 100%;
+                height: 100%;
 
-    .skills {
-        width: 100%;
-        height: 100%;
-    }
+                .texto_c4 p {
+                    height: 40%;
+                    width: 60%;
+                    height: 60%;
+                }
 
-    .contenedor_4 {
-        width: 100%;
-        height: 100%;
+            }
 
-        .texto_c4 p {
-            height: 40%;
-            width: 60%;
-            height: 60%;
         }
-
     }
+
+
+
 
     /*************************************SERVICIOS*****************/
+
+    .responsive_service_main .services_responsive .titulo_service .img_service_home img {
+        width: 60%;
+        height: auto;
+      }
 
     .main_services {
         width: 100%;
         height: 100%;
         padding-top: 30px;
+
+        .main_services h2 {
+            font-size: 40px;
+        }
+
+        .main_services p {
+            font-size: 16px;
+        }
+
+        .titulo_service {
+            width: 100%;
+            height: 380px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 0px 150px;
+
+            & .img_service_home {
+                width: 35%;
+                height: 100%;
+
+                & img {
+                    width: 100px;
+                    height: auto;
+                }
+            }
+
+            & .titulo1 {
+                font-size: 40px;
+                font-weight: 900;
+                color: #353755;
+            }
+
+            & .titulo2 {
+                font-size: 30px;
+                font-weight: 600;
+                color: #353755;
+            }
+
+            .button_services {
+
+                width: 250px;
+                height: 50px;
+                background-color: #353755;
+                color: #fff;
+                border: none;
+                border-radius: 12px;
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 25px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #5BD3C7;
+                    color: #353755;
+                    transition: all 0.3s ease;
+                    border: none;
+                }
+            }
+        }
+
+        .service_web {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+
+            .texto_web {
+                padding: 0px 0px 0px 40px;
+            }
+
+            .img_web {
+                padding: 0px 0px 0px 40px;
+            }
+        }
+
+
+        .service_3d {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 40px;
+
+            .texto_3d {
+                padding: 30px 40px 0px 0px;
+            }
+        }
+
+
+        .service_seo {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .texto_seo {
+                width: 50%;
+                padding: 15px 0px 0px 40px;
+            }
+
+            .img_seo {
+                width: 50%;
+                padding: 70px 0px 0px 0px;
+            }
+        }
+
+
+
+        .service_branding {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 40px;
+
+            .texto_branding {
+                padding: 30px 50px 0px 0px;
+            }
+        }
+
+
+
     }
 
-    .main_services h2 {
-        font-size: 40px;
-    }
-
-    .main_services p {
-        font-size: 16px;
-    }
-
-    .titulo_service {
-        width: 100%;
-        height: 380px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 0px 150px;
-    }
-
-    .titulo_service .img_service_home img {
-        width: 700px;
-        height: auto;
-    }
-
-    .img_service_home {
-        width: 35%;
-        height: 100%;
-    }
-
-    .titulo_service .titulo1 {
-        font-size: 40px;
-        font-weight: 900;
-        color: #353755;
-    }
-
-    .titulo_service .titulo2 {
-        font-size: 30px;
-        font-weight: 600;
-        color: #353755;
-    }
-
-    .button_services {
-
-        width: 250px;
-        height: 50px;
-        background-color: #353755;
-        color: #fff;
-        border: none;
-        border-radius: 12px;
-        font-size: 18px;
-        font-weight: 600;
-        margin-top: 25px;
-        cursor: pointer;
-    }
-
-    .button_services:hover {
-        background-color: #5BD3C7;
-        color: #353755;
-        transition: all 0.3s ease;
-        border: none;
-    }
-
-    /*servicio web*/
-
-    .service_web {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 30px;
-    }
-
-    .texto_web {
-        padding: 0px 0px 0px 40px;
-    }
-
-    .img_web {
-        padding: 0px 0px 0px 40px;
-    }
-
-    /*servicio 3d*/
-
-    .service_3d {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 40px;
-    }
-
-    .texto_3d {
-        padding: 30px 40px 0px 0px;
-    }
-
-    /*SERVICOP SEO*/
-
-    .service_seo {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .texto_seo {
-        width: 50%;
-        padding: 15px 0px 0px 40px;
-    }
-
-    .img_seo {
-        width: 50%;
-        padding: 70px 0px 0px 0px;
-    }
-
-    /*BRANDING SERVICE*/
-
-    .service_branding {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 40px;
-    }
-
-    .texto_branding {
-        padding: 30px 50px 0px 0px;
-    }
 
     /*********************GALERÍA*************************/
 
@@ -3700,66 +3435,39 @@ footer {
         width: 100%;
         height: auto;
         background-color: #0b4868;
+
+        .contenedor_redes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-items: center;
+            background-color: #727272;
+
+            & a img {
+                width: 32px;
+                height: auto;
+                margin: 15px 15px;
+
+                & a img:hover {
+                    opacity: 25%;
+                    transition: all 0.2s ease;
+                }
+            }
+        }
     }
 
-    .titulo_footer {
-        display: flex;
-        justify-content: center;
-        padding-top: 40px;
-    }
-
-
-    .contenedor_redes {
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        /*margin-top: 30px;*/
-        align-items: center;
-        background-color: #727272;
-    }
-
-    .contenedor_redes a img {
-        width: 32px;
-        height: auto;
-        margin: 15px 15px;
-    }
-
-    .contenedor_redes a img:hover {
-        opacity: 25%;
-        transition: all 0.2s ease;
-    }
-
-    /************aboout me*****************/
-
-    .contenedor_10xl {
-        width: 100%;
-        height: 500px;
-        padding-top: 10px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .skills_c10 {
-        width: 100%;
-        margin: 0px;
-    }
-
-    .skills-xl {
-        width: 95%;
-        height: 100%;
-    }
 
 }
 
 @media screen and (min-width:1300px) {
-    .footer_xl {
-        margin-top: 600px;
-    }
 
-    .card {
-        box-shadow: 5px 5px 5px #C1C1C1;
+    .responsive_service_main .services_responsive .titulo_service .img_service_home img {
+        width: 60%;
+        height: auto;
+      }
+
+    .footer_xl {
+        margin-top: 10px;
     }
 }
 
@@ -3848,87 +3556,61 @@ footer {
         }
     }
 
-    .texto_c4 p {
-        padding-bottom: 0px;
-        height: 50%;
-    }
+
 
     /******************sobre mi*******************/
 
-    .titulo_c6 h4 {
-        font-size: 18px;
-        padding-bottom: 50px;
-    }
+    .main_about{
 
-    .contenedor_10xl {
-        width: 100%;
-        height: 500px;
-        padding-top: 10px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        & .contenedor_about {
 
-        .skills_c10 {
-            width: 100%;
-            height: 200px;
-            margin: 0px;
+        .contenedor_4{
+
+            & .texto_c4{
+                
+                & p{
+                    padding-bottom: 0px;
+                    height: 40%;
+                }
+            }
+          
         }
 
-        .skills-xl {
-            width: 90%;
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            .card {
-                height: 250px;
-                box-shadow: 5px 5px 5px #C1C1C1;
-
-                & .name_card {
-                    text-align: center;
+            & .contenedor_6 {
+    
+                & .titulo_c6 {
+    
+                    h4 {
+                        padding: 5px 5px;
+                        text-align: center;
+                        width: 50%;
+                        height: 8%;
+                        font-size: 14px;
+                        background-color: #fff;
+                        font-weight: 500;
+                        border-radius: 12px;
+                    }
                 }
-
-                & img {
-                    width: 40%;
-                }
-
             }
         }
     }
+
+    /*******************servicios**********/
+
+
+    .responsive_service_main .services_responsive .titulo_service .img_service_home img {
+        width: 50%;
+        height: auto;
+      }
 
     .footer_xl {
-        margin-top: 800px;
+        margin-top: 20px;
     }
 
-    .texto_c4 p {
-        height: 30%;
-    }
+    
 }
 
-@media screen and (min-width:1600px) {
 
-
-    .skills-xl {
-        width: 90%;
-        height: 100%;
-
-        .card {
-            margin-top: 20px;
-            box-shadow: 5px 5px 5px #C1C1C1;
-
-            & img {
-                width: 40%;
-                height: auto;
-                align-self: center;
-                padding-top: 10px;
-            }
-        }
-    }
-
-}
 
 
 
