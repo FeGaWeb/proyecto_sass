@@ -754,89 +754,76 @@ footer {
 
     /*seccion servicios*/
 
-    .main_services {
+    .responsive_service_main {
         padding-top: 10px;
         width: 100%;
-        height: 100%;
+        height: auto;
 
-        .contenedor_responsive {
+        .services_responsive {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: 100%;
+            grid-template-areas: "a1"
+                "a2"
+                "a3"
+                "a4"
+                "a5";
+
+        }
+
+        .titulo_service {
+            grid-area: a1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .service1 {
+            grid-area: a2;
             width: 100%;
             height: 100%;
 
-            .titulo_service {
-
-                .button_services {
-                    width: 140px;
-                    height: 40px;
-                    font-size: 15px;
-                    font-weight: 900;
-                }
+            & .texto_web {
+                height: 100% !important;
             }
 
-            .service_web {
-
-                .img_web {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
-
-                    & img {
-                        width: 250px;
-                        padding: $padding_media375_img;
-                    }
-                }
+            & .img_web {
+                display: none;
             }
+        }
+
+        .service2 {
+            width: 100%;
+            height: 100%;
+            grid-area: a3;
 
             .service_3d {
-
-                .img_3d {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
-
-                    & img {
-                        width: 250px;
-                        padding: $padding_media375_img;
-                    }
-                }
+                margin: 0px 0px;
             }
 
-            .service_seo {
-
-                .img_seo {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
-
-                    & img {
-                        width: 250px;
-                        padding: $padding_media375_img;
-                    }
-                }
+            & .img_3d {
+                display: none;
             }
+        }
 
+        .service3 {
+            width: 100%;
+            height: 100%;
+            grid-area: a4;
 
+            & .img_seo {
+                display: none;
+            }
+        }
 
-            .service_branding {
+        .service4 {
+            grid-area: a5;
+            width: 100%;
+            height: 100%;
 
-                .img_branding {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
-
-                    & img {
-                        width: 250px;
-                        padding: $padding_media375_img;
-                    }
-                }
+            & .img_branding {
+                display: none;
             }
         }
     }
@@ -1064,7 +1051,7 @@ footer {
             padding: 10px 0px 0px 0px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 10% 25% 15% 20% 20%;
+            grid-template-rows: 10% 25% 15% 20% 30%;
             grid-template-areas: "a1 a1"
                 "a2 a2"
                 "a3 a3"
@@ -2313,25 +2300,25 @@ footer {
 
     /*******************SERVICIOS******************/
 
-    .img_web {
-        width: 100%;
-        height: 60%;
-        object-fit: cover;
-        padding-left: 120px;
+
+
+    .responsive_service_main .services_responsive .service1 .service_web .img_web img {
+        width: 500px;
+        height: 100%;
+        padding: 0px 0px 30px 120px;
     }
 
-    .img_3d {
-        width: 100%;
-        height: 60%;
-        object-fit: cover;
-        padding-left: 120px;
+    .responsive_service_main .services_responsive .service2 .service_3d .img_3d {
+        width: 90%;
+        height: 50%;
+        padding-left: 100px;
     }
 
-    .img_seo {
-        width: 100%;
-        height: 60%;
-        object-fit: cover;
-        padding-left: 180px;
+
+    .responsive_service_main .services_responsive .service3 .service_seo .img_seo {
+        width: 90%;
+        height: 50%;
+        padding-left: 110px;
     }
 
     .img_branding {
@@ -2358,31 +2345,35 @@ footer {
 
     /********SERVICIOS***********/
 
-    .img_web {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        padding-right: 15px;
+    .responsive_service_main .services_responsive .service1 .service_web .img_web {
+        width: 500px;
+        height: 100%;
+        padding: 0px 0px 30px 0px;
+
+        & img {
+            padding-left: 0px;
+        }
     }
 
-    .img_3d {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        padding-right: 15px;
+    .responsive_service_main .services_responsive .service2 .service_3d .img_3d {
+        width: 90%;
+        height: 50%;
+        padding-left: 160px;
+
+        & img {
+            padding-left: 0px;
+        }
     }
 
-    .img_seo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        padding-right: 15px;
+
+    .responsive_service_main .services_responsive .service3 .service_seo .img_seo {
+        width: 90%;
+        height: 50%;
+        padding-left: 200px;
+
+        & img {
+            padding-left: 0px;
+        }
     }
 
     .service_branding {
@@ -2396,6 +2387,7 @@ footer {
             align-items: center;
             padding-right: 15px;
             padding-top: 20px;
+            padding-left: 30px;
         }
     }
 
@@ -2775,8 +2767,8 @@ footer {
 
     /*****************seccion servicios***********************************/
 
-    
-      
+
+
     .responsive_service_main {
         width: 100%;
         height: 100%;
@@ -2909,6 +2901,7 @@ footer {
                         width: 100%;
                         height: 90%;
                         text-align: center;
+                        padding-left: 30px;
 
                         & img {
                             width: 500px;
@@ -2958,7 +2951,7 @@ footer {
                     .img_seo {
                         width: 100%;
                         height: 90%;
-                        text-align: center;
+                        padding-left: 260px;
 
                         & img {
                             width: 450px;
@@ -3258,152 +3251,52 @@ footer {
     .responsive_service_main .services_responsive .titulo_service .img_service_home img {
         width: 60%;
         height: auto;
-      }
+    }
 
-    .main_services {
+    .extend_1200px_services {
         width: 100%;
         height: 100%;
-        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
-        .main_services h2 {
-            font-size: 40px;
-        }
+    .responsive_service_main .services_responsive .service1 .service_web {
 
-        .main_services p {
-            font-size: 16px;
-        }
-
-        .titulo_service {
-            width: 100%;
-            height: 380px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            flex-wrap: wrap;
-            padding: 0px 150px;
-
-            & .img_service_home {
-                width: 35%;
-                height: 100%;
-
-                & img {
-                    width: 100px;
-                    height: auto;
-                }
-            }
-
-            & .titulo1 {
-                font-size: 40px;
-                font-weight: 900;
-                color: #353755;
-            }
-
-            & .titulo2 {
-                font-size: 30px;
-                font-weight: 600;
-                color: #353755;
-            }
-
-            .button_services {
-
-                width: 250px;
-                height: 50px;
-                background-color: #353755;
-                color: #fff;
-                border: none;
-                border-radius: 12px;
-                font-size: 18px;
-                font-weight: 600;
-                margin-top: 25px;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: #5BD3C7;
-                    color: #353755;
-                    transition: all 0.3s ease;
-                    border: none;
-                }
-            }
-        }
-
-        .service_web {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 30px;
-
-            .texto_web {
-                padding: 0px 0px 0px 40px;
-            }
-
-            .img_web {
-                padding: 0px 0px 0px 40px;
-            }
-        }
-
-
-        .service_3d {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 40px;
-
-            .texto_3d {
-                padding: 30px 40px 0px 0px;
-            }
-        }
-
-
-        .service_seo {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: center;
-
-            .texto_seo {
-                width: 50%;
-                padding: 15px 0px 0px 40px;
-            }
-
-            .img_seo {
-                width: 50%;
-                padding: 70px 0px 0px 0px;
-            }
-        }
-
-
-
-        .service_branding {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 40px;
-
-            .texto_branding {
-                padding: 30px 50px 0px 0px;
-            }
-        }
-
-
+        @extend .extend_1200px_services;
+        padding: 0px 0px 0px 50px;
 
     }
 
+    .responsive_service_main .services_responsive .service2 .service_3d {
+
+        @extend .extend_1200px_services;
+        padding: 0px 50px 0px 0px;
+
+        & .img_3d {
+            padding-left: 0px;
+        }
+    }
+
+    .responsive_service_main .services_responsive .service3 .service_seo {
+
+        @extend .extend_1200px_services;
+        padding: 0px 0px 0px 50px;
+
+        .img_seo {
+            padding-left: 0px;
+            padding-left: 80px;
+        }
+
+    }
+
+    .responsive_service_main .services_responsive .service4 .service_branding {
+
+        @extend .extend_1200px_services;
+        padding: 0px 50px 0px 0px;
+    }
 
     /*********************GALERÍA*************************/
 
@@ -3413,9 +3306,6 @@ footer {
         background-image: none;
         background-color: rgb(255, 255, 255);
     }
-
-
-
 
     /*CONTACTO*/
 
@@ -3461,13 +3351,52 @@ footer {
 
 @media screen and (min-width:1300px) {
 
-    .responsive_service_main .services_responsive .titulo_service .img_service_home img {
-        width: 60%;
-        height: auto;
-      }
 
     .footer_xl {
         margin-top: 10px;
+    }
+
+    .responsive_service_main .services_responsive .titulo_service {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        & .img_service_home{
+            width: 50%;
+            height: 50%;
+
+            & img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        
+      }
+
+    .responsive_service_main .services_responsive .service1 .service_web {
+        padding: 0px 0px 0px 50px;
+
+        & .img_web {
+
+            width: 70%;
+            height: 100%;
+            padding: 20px 0px 0px 0px;
+        }
+    }
+
+    .responsive_service_main .services_responsive .service3 .service_seo {
+        padding: 0px 0px 0px 50px;
+
+        & .img_seo {
+            width: 70%;
+            height: 100%;
+        }
     }
 }
 
@@ -3560,26 +3489,26 @@ footer {
 
     /******************sobre mi*******************/
 
-    .main_about{
+    .main_about {
 
         & .contenedor_about {
 
-        .contenedor_4{
+            .contenedor_4 {
 
-            & .texto_c4{
-                
-                & p{
-                    padding-bottom: 0px;
-                    height: 40%;
+                & .texto_c4 {
+
+                    & p {
+                        padding-bottom: 0px;
+                        height: 40%;
+                    }
                 }
+
             }
-          
-        }
 
             & .contenedor_6 {
-    
+
                 & .titulo_c6 {
-    
+
                     h4 {
                         padding: 5px 5px;
                         text-align: center;
@@ -3601,13 +3530,13 @@ footer {
     .responsive_service_main .services_responsive .titulo_service .img_service_home img {
         width: 50%;
         height: auto;
-      }
+    }
 
     .footer_xl {
         margin-top: 20px;
     }
 
-    
+
 }
 
 
@@ -3615,7 +3544,3 @@ footer {
 
 
 
-
-.card .name_card {
-    color: rgb(0, 0, 0);
-}
