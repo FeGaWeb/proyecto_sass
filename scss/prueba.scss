@@ -333,6 +333,12 @@ footer {
             "a8 a8 a8 a8 a8 a9 a9 a9 a9 a9"
             "a8 a8 a8 a8 a8 a9 a9 a9 a9 a9";
 
+        @mixin bg-swh ($bgsize, $widthbg, $heightbg) {
+            background-size: $bgsize;
+            width: $widthbg;
+            height: $heightbg;
+        }
+
         .contenedor_1 {
             width: 100%;
             height: 100%;
@@ -350,30 +356,26 @@ footer {
         }
 
         .contenedor_11 {
-            width: 100%;
-            height: 100%;
+            @include bg-swh(cover, 100%, 100%);
             grid-area: a2;
             background-image: url(../img/about/black_a.jpg);
-            background-size: cover;
             background-position: $posicion_centradaxy_objetos;
         }
 
         .contenedor_2 {
-            width: 100%;
-            height: 100%;
+
+            @include bg-swh(cover, 100%, 100%);
             grid-area: a4;
             background-image: url(../img/about/about2.jpg);
-            background-size: cover;
             background-position: $posicion_centradaxy_objetos;
         }
 
         .contenedor_3 {
-            width: 100%;
-            height: 100%;
+
+            @include bg-swh(cover, 100%, 100%);
             background-color: rgb(6, 61, 58);
             grid-area: a3;
             background-image: url(../img/about/fotoa1.jpg);
-            background-size: cover;
             background-position: $posicion_centradaxy_objetos;
         }
 
@@ -438,13 +440,13 @@ footer {
         }
 
         .contenedor_6 {
-            width: 100%;
-            height: 100%;
+
+           @include bg-swh(cover, 100%, 100%);
             background-color: rgb(237, 240, 62);
             grid-area: a7;
             background-image: url(../img/about/me2.jpg);
             background-position: $posicion_centradaxy_objetos;
-            background-size: cover;
+            
 
             .titulo_c6 {
 
@@ -472,22 +474,18 @@ footer {
         }
 
         .contenedor_8 {
-            width: 100%;
-            height: 100%;
+            @include bg-swh(cover, 100%, 100%);
             grid-area: a8;
             background-image: url(../img/about/about5.jpg);
-            background-size: cover;
             background-position: center 40%;
 
         }
 
         .contenedor_9 {
-            width: 100%;
-            height: 100%;
+            @include bg-swh(cover, 100%, 100%);
             background-color: rgb(5, 158, 0);
             grid-area: a9;
             background-image: url(../img/about/fotoa2.jpg);
-            background-size: cover;
             background-position: $posicion_centradaxy_objetos;
             background-repeat: no-repeat;
 
