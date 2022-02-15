@@ -1,0 +1,139 @@
+
+@media screen and (min-width:1400px) {
+    .footer_xl {
+        margin-top: 600px;
+    }
+
+    .card {
+        box-shadow: 5px 5px 5px #C1C1C1;
+    }
+}
+
+@media screen and (min-width:1500px) {
+
+
+    /*******************home****************/
+
+    .main_home h1 {
+        width: 100%;
+        height: auto;
+        transform: translateX(-150%);
+    }
+
+    /*contenedor 2*/
+
+
+    .main_galeria {
+
+        .contenedor_only_img_responsive {
+            display: none;
+        }
+
+        .contenedor_no_responsive {
+            display: block;
+
+            .contenedor1 {
+
+                .imgsec {
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .img2 {
+                        width: 50%;
+                        height: 100%;
+                    }
+
+                    .img3 {
+                        width: 50%;
+                        height: 100%;
+                        padding-top: 0px;
+                        padding-left: 10px;
+                    }
+
+                    .img_26 {
+                        object-position: 80% center;
+                    }
+                }
+            }
+
+            .contenedor2 {
+
+                .imgsec {
+
+                    .img5 {
+                        width: 50%;
+                        height: 100%;
+                        padding-top: 0px;
+                    }
+
+                    .img6 {
+                        width: 50%;
+                        height: 100%;
+                        padding-top: 0px;
+                        padding-left: 10px;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+
+    /******************sobre mi*******************/
+
+    .main_about {
+
+        & .contenedor_about {
+
+            .contenedor_4 {
+
+                & .texto_c4 {
+
+                    & p {
+                        padding-bottom: 0px;
+                        height: 40%;
+                    }
+                }
+
+            }
+
+            & .contenedor_6 {
+
+                & .titulo_c6 {
+
+                    h4 {
+                        padding: 5px 5px;
+                        text-align: center;
+                        width: 50%;
+                        height: 8%;
+                        font-size: 14px;
+                        background-color: #fff;
+                        font-weight: 500;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*******************servicios**********/
+
+
+    .responsive_service_main .services_responsive .titulo_service .img_service_home img {
+        width: 50%;
+        height: auto;
+    }
+
+    .footer_xl {
+        margin-top: 20px;
+    }
+
+
+}

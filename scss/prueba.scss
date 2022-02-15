@@ -1,8 +1,8 @@
 @import 'variables.scss';
 
 * {
-    margin: 0px 0px;
-    padding: 0px 0px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Readex Pro', sans-serif;
 }
@@ -32,10 +32,6 @@
     transition: all 0.5s ease;
 }
 
-.nav_home a button {
-    margin-top: 30px;
-}
-
 .main_home {
     margin-left: 150px;
     width: 70%;
@@ -62,63 +58,42 @@ footer {
     width: 100%;
     height: auto;
     background-color: #0b4868;
+
+    .contenedor_redes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        background-color: #727272;
+    
+        & a img {
+            width: 32px;
+            height: auto;
+            margin: 15px 15px;
+        }
+    
+        & a img:hover {
+            opacity: $opacidad_logos;
+            transition: all 0.2s ease;
+        }
+    }
 }
 
-.contenedor_redes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-    background-color: #727272;
 
-    & a img {
-        width: 32px;
-        height: auto;
-        margin: 15px 15px;
-    }
-
-    & a img:hover {
-        opacity: $opacidad_logos;
-        transition: all 0.2s ease;
-    }
-}
 
 /************************************PAGINA CONTACTO************************************/
-
-.header_contacto {
-    width: 100%;
-    height: 115px;
-    background-color: #ffffff;
-    position: fixed;
-}
-
-.button_contacto {
-    background-color: #353755;
-}
-
-.button_contacto:hover {
-    background-color: #5BD3C7;
-}
 
 .main_contacto {
     width: 100%;
     height: auto;
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
 
     .imagen_contacto {
         width: 50%;
         height: auto;
         margin: 250px 0px 200px 0px;
     }
-
-
-}
-
-
-.contacto {
-    width: 50%;
-    margin-top: 250px;
 
     #nombres {
         width: 90%;
@@ -179,6 +154,7 @@ footer {
         color: #353755;
         transition: all 0.3s ease;
     }
+
 }
 
 /**********************GALERÍA DE IMAGENES**********************/
@@ -187,114 +163,115 @@ footer {
     width: 100%;
     height: 100%;
     padding: 30px 150px 100px 150px;
-}
 
-/*contenedor1*/
+    .contenedor_no_responsive{
 
-.contenedor1 {
-    width: 100%;
-    width: 100%;
-    display: flex;
-    height: 600px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    .imgp {
-        width: 60%;
-        height: 600px;
-        object-fit: cover;
-
-        .img1 {
+        .contenedor1 {
             width: 100%;
-            height: 100%;
-            padding-right: 10px;
-            object-fit: cover;
-            object-position: $posicion_centradaxy_objetos;
-        }
-    }
-
-}
-
-.imgsec {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-
-    & .img2 {
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-        object-position: $posicion_centradaxy_objetos;
-    }
-
-    & .img3 {
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-        padding-left: 10px;
-        object-position: $posicion_centradaxy_objetos;
-    }
-}
-
-
-/*contenedor 2*/
-
-.contenedor2 {
-    width: 100%;
-    width: 100%;
-    display: flex;
-    height: 600px;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    margin: 10px 0px;
-
-    .imgp2 {
-        width: 60%;
-        height: 600px;
-        object-fit: cover;
-        padding-left: 10px;
-
-        .img4 {
             width: 100%;
-            height: 100%;
-            padding: opx 10px 0px 10px;
-            object-fit: cover;
-            object-position: $posicion_centradaxy_objetos;
+            display: flex;
+            height: 600px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        
+            .imgp {
+                width: 60%;
+                height: 600px;
+                object-fit: cover;
+        
+                .img1 {
+                    width: 100%;
+                    height: 100%;
+                    padding-right: 10px;
+                    object-fit: cover;
+                    object-position: $posicion_centradaxy_objetos;
+                }
+            }
+        
         }
+        
+        .imgsec {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        
+            & .img2 {
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+                object-position: $posicion_centradaxy_objetos;
+            }
+        
+            & .img3 {
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+                padding-left: 10px;
+                object-position: $posicion_centradaxy_objetos;
+            }
+        }
+        
+        
+        /*contenedor 2*/
+        
+        .contenedor2 {
+            width: 100%;
+            width: 100%;
+            display: flex;
+            height: 600px;
+            flex-direction: row-reverse;
+            flex-wrap: nowrap;
+            margin: 10px 0px;
+        
+            .imgp2 {
+                width: 60%;
+                height: 600px;
+                object-fit: cover;
+                padding-left: 10px;
+        
+                .img4 {
+                    width: 100%;
+                    height: 100%;
+                    padding: opx 10px 0px 10px;
+                    object-fit: cover;
+                    object-position: $posicion_centradaxy_objetos;
+                }
+            }
+        }
+        
+        
+        .imgsec {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        
+            & .img5 {
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+                object-position: $posicion_centradaxy_objetos;
+            }
+        
+            & .img6 {
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+                padding-left: 10px;
+                object-position: $posicion_centradaxy_objetos;
+            }
+        
+        }
+
     }
 }
 
-
-.imgsec {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-
-    & .img5 {
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-        object-position: $posicion_centradaxy_objetos;
-    }
-
-    & .img6 {
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-        padding-left: 10px;
-        object-position: $posicion_centradaxy_objetos;
-    }
-
-}
-
-
-/**************************************SECCIÓN SOBRE MI**************************************/
+/************SECCIÓN SOBRE MI**************/
 
 
 
@@ -309,9 +286,8 @@ footer {
 
 .main_about {
     width: 100%;
-    height: 2900px;
+    height: 100%;
     padding-top: 170px;
-    margin-bottom: 80px;
 
     .contenedor_about {
         width: 100%;
@@ -319,7 +295,7 @@ footer {
         /*background-color: #7477A1;*/
         display: grid;
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(12, 1fr);
+        grid-template-rows: auto;
         grid-template-areas: "a1 a1 a1 a1 a1 a4 a4 a4 a2 a2"
             "a3 a3 a3 a3 a3 a4 a4 a4 a2 a2"
             "a3 a3 a3 a3 a3 a4 a4 a4 a2 a2"
@@ -508,13 +484,11 @@ footer {
 
 .main_services {
     width: 100%;
-    height: 2580px;
+    height: 100%;
     background-color: #ffffff;
 
     .all_services {
         width: 100%;
-        height: 100%;
-        padding-top: 160px;
 
         .titulo_service {
             width: 100%;
@@ -740,7 +714,7 @@ footer {
 
 /******************MEDIA QUERIES******************/
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:320px) {
 
     .main_home h1 {
         transform: translate(-115%);
@@ -750,18 +724,26 @@ footer {
         font-size: 9px;
     }
 
+    
+
     /*seccion servicios*/
+
+    .header_general {
+        width: 100%;
+        height: 70px;
+        background-image: none;
+        background-color: #fff;
+    }
 
     .responsive_service_main {
         padding-top: 10px;
         width: 100%;
-        height: auto;
+        height: 100%;
 
         .services_responsive {
             width: 100%;
-            height: 100%;
             display: grid;
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: auto;
             grid-template-columns: 100%;
             grid-template-areas: "a1"
                 "a2"
@@ -769,61 +751,126 @@ footer {
                 "a4"
                 "a5";
 
+                .titulo_service {
+                    grid-area: a1;
+                    width: 100%;
+                    height: 100%;
+        
+                    & .titulo1{
+                        font-size: 15px;
+                    }
+                }
+
+                .service1 {
+                    grid-area: a2;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0px;
+                    padding: 0px;
+        
+                    .service_web{
+                        
+                        padding: 0px 0px ;
+                        margin: 0px 0px;
+
+                        .texto_web{
+                            
+                            h2{
+                                font-size: 20px;
+                            }
+
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+        
+                    & .img_web {
+                        display: none;
+                    }
+                }
+        
+
+                .service2 {
+                    width: 100%;
+                    height: 100%;
+                    grid-area: a3;
+        
+                    .service_3d {
+                        margin: 0px 0px;
+
+                        .texto_3d{
+
+                            h2{
+                                font-size: 20px;
+                            }
+
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+
+                        & .img_3d {
+                            display: none;
+                        }
+                    }
+        
+                    
+                }
+        
+                .service3 {
+                    width: 100%;
+                    height: 100%;
+                    grid-area: a4;
+
+                    .service_seo{
+
+                        .texto_seo{
+                            
+                            h2{
+                                font-size: 20px;
+                            }
+
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+        
+                    & .img_seo {
+                        display: none;
+                    }
+                }
+        
+                .service4 {
+                    grid-area: a5;
+                    width: 100%;
+                    height: 100%;
+
+                    .service_branding{
+
+                        .texto_branding{
+
+                            h2{
+                                font-size: 20px;
+                            }
+
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+        
+                    & .img_branding {
+                        display: none;
+                    }
+                }
         }
 
-        .titulo_service {
-            grid-area: a1;
-            width: 100%;
-            height: 100%;
-        }
+        
+       
 
-        .service1 {
-            grid-area: a2;
-            width: 100%;
-            height: 100%;
-
-            & .texto_web {
-                height: 100% !important;
-            }
-
-            & .img_web {
-                display: none;
-            }
-        }
-
-        .service2 {
-            width: 100%;
-            height: 100%;
-            grid-area: a3;
-
-            .service_3d {
-                margin: 0px 0px;
-            }
-
-            & .img_3d {
-                display: none;
-            }
-        }
-
-        .service3 {
-            width: 100%;
-            height: 100%;
-            grid-area: a4;
-
-            & .img_seo {
-                display: none;
-            }
-        }
-
-        .service4 {
-            grid-area: a5;
-            width: 100%;
-            height: 100%;
-
-            & .img_branding {
-                display: none;
-            }
-        }
+       
     }
 
     /**********sobremi************/
@@ -854,7 +901,7 @@ footer {
 
 }
 
-@media screen and (max-width:468px) {
+@media screen and (min-width:468px) {
 
 
     .header_home {
@@ -864,15 +911,17 @@ footer {
         background-size: cover;
     }
 
-    #home_index_468 {
+    .main_home {
 
         width: 100px;
-        transform: translateX(70%);
+        position: relative;
+        z-index: 999;
 
         & h1 {
             font-size: 70px;
             width: 100%;
             height: 100%;
+           
         }
     }
 
@@ -915,7 +964,6 @@ footer {
 
         .contenedor_responsive {
             width: 100%;
-            height: 100%;
             margin: 0px 0px;
             padding: 0px 0px;
             display: grid;
@@ -939,12 +987,12 @@ footer {
 
             .contenedor_1 {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 grid-area: a1;
+                padding: 0px 0px;
 
                 .titulo_c1 {
                     width: 100%;
-                    height: 100%;
                     padding-top: 30px;
 
                     & h1 {
@@ -1041,33 +1089,22 @@ footer {
     .responsive_service_main {
         width: 100%;
         height: 100%;
-        margin-bottom: 100px;
+        margin: 0px 0px;
 
         .services_responsive {
             width: 100%;
-            height: 100%;
-            padding: 10px 0px 0px 0px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 10% 25% 15% 20% 30%;
+            grid-template-rows: auto;
             grid-template-areas: "a1 a1"
                 "a2 a2"
                 "a3 a3"
                 "a4 a4"
                 "a5 a5";
 
-
-            .services_responsive p {
-                font-size: 14px;
-            }
-
-            .services_responsive h2 {
-                font-size: 20px;
-            }
-
             .titulo_service {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 grid-area: a1;
                 margin: 0px;
                 padding: 0px;
@@ -1082,20 +1119,18 @@ footer {
                 }
 
                 & .titulo1 {
-                    font-size: 35px;
+                    font-size: 25px;
                     width: 400px;
-                    height: 100px;
                     text-align: center;
                     padding-top: 30px;
-                    margin-bottom: 10px;
                 }
 
                 & .titulo2 {
-                    font-size: 25px;
+                    font-size: 20px;
                     width: 400px;
-                    height: 50px;
                     text-align: center;
                     margin: 0px;
+                    padding: 0px;
                 }
 
                 .button_services {
@@ -1109,12 +1144,11 @@ footer {
 
             .service1 {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 grid-area: a2;
 
                 .service_web {
                     width: 100%;
-                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: nowrap;
@@ -1122,13 +1156,28 @@ footer {
                     align-items: center;
                     padding: 15px 0px;
 
+                    .texto_web{
+
+                        h2{
+                            font-size: 20px;
+                        }
+
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+
                     .img_web {
-                        width: 90%;
-                        height: 50%;
+                        width: 100%;
+                        height: 45%;
+                        padding: 0px 0px;
+                        text-align: center;
+                        padding-top: 20px;
 
                         & img {
-                            width: 400px;
+                            width: 300px;
                             height: 100%;
+                            
                         }
                     }
 
@@ -1138,7 +1187,7 @@ footer {
                         margin: 0px;
 
                         & h2 {
-                            font-size: 30px;
+                            font-size: 25px;
                             text-align: center;
                         }
                     }
@@ -1149,12 +1198,11 @@ footer {
 
             .service2 {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 grid-area: a3;
 
                 .service_3d {
                     width: 100%;
-                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: nowrap;
@@ -1164,9 +1212,10 @@ footer {
                     .img_3d {
                         width: 90%;
                         height: 50%;
+                        text-align: center;
 
                         & img {
-                            width: 400px;
+                            width: 300px;
                             height: 100%;
                         }
                     }
@@ -1176,8 +1225,12 @@ footer {
                         height: 50%;
                         margin: 0px;
 
+                        p{
+                            font-size: 14px;
+                        }
+
                         & h2 {
-                            font-size: 30px;
+                            font-size: 25px;
                             text-align: center;
                         }
                     }
@@ -1188,12 +1241,12 @@ footer {
 
             .service3 {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 grid-area: a4;
+                padding-bottom: 20px;
 
                 .service_seo {
                     width: 100%;
-                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: nowrap;
@@ -1204,9 +1257,12 @@ footer {
                     .img_seo {
                         width: 90%;
                         height: 50%;
+                        text-align: center;
+                        padding: 0px 0px;
+                        margin: 0px 0px;
 
                         & img {
-                            width: 400px;
+                            width: 300px;
                             height: 100%;
                         }
                     }
@@ -1215,8 +1271,12 @@ footer {
                         width: 90%;
                         margin: 0px;
 
-                        & h2 {
-                            font-size: 30px;
+                        p{
+                            font-size: 14px;
+                        }
+
+                        h2 {
+                            font-size: 20px;
                             text-align: center;
                         }
                     }
@@ -1226,25 +1286,25 @@ footer {
             /***********Serviciobranding**************/
             .service4 {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 grid-area: a5;
+                padding-bottom: 20px;
 
                 .service_branding {
                     width: 100%;
-                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: nowrap;
                     justify-content: space-evenly;
                     align-items: center;
-                    padding-top: 15px;
 
                     .img_branding {
                         width: 90%;
                         height: 50%;
+                        text-align: center;
 
                         & img {
-                            width: 400px;
+                            width: 300px;
                             height: 100%;
                         }
                     }
@@ -1252,9 +1312,14 @@ footer {
                     .texto_branding {
                         width: 90%;
                         margin: 0px;
+                        padding-top: 15px;
+
+                        p{
+                            font-size: 14px;
+                        }
 
                         & h2 {
-                            font-size: 30px;
+                            font-size: 25px;
                             text-align: center;
                         }
                     }
@@ -1298,7 +1363,6 @@ footer {
 
         .contenedor_only_img_responsive {
             width: 100%;
-            height: 80%;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
@@ -1316,451 +1380,6 @@ footer {
                 padding: 0px 0px;
             }
 
-            .contenedor_no_responsive {
-                display: none;
-            }
-        }
-    }
-
-    /*FOOTER 486PX**********************/
-
-    .footer_responsive {
-        width: 100%;
-        margin-top: 120px;
-    }
-
-}
-
-@media screen and (max-width:599px) {
-
-    .main_home {
-        width: 100px;
-        transform: translateX(20%);
-
-        & h1 {
-            font-size: 100px;
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    footer {
-        width: 100%;
-    }
-
-    /*************GALERIA DE IMAGENES****************/
-
-    .header_general {
-        width: 100%;
-        height: 70px;
-        background-image: none;
-        background-color: #fff;
-    }
-
-    /*******************SOBRE MI 486PX*******************/
-
-    .main_responsive {
-        width: 100%;
-        height: 100%;
-        padding: 0px 40px 0px 40px;
-
-        .contenedor_responsive {
-            width: 100%;
-            height: 100%;
-            margin: 0px 0px;
-            padding: 0px 0px;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(13, 1fr);
-            grid-template-areas: "a1 a1"
-                "a3 a3"
-                "a3 a3"
-                "a3 a3"
-                "a4 a4"
-                "a4 a4"
-                "a5 a5"
-                "a6 a7"
-                "a6 a7"
-                "a8 a8"
-                "a8 a8"
-                "a9 a9"
-                "a9 a9";
-
-            .contenedor_1 {
-                width: 100%;
-                height: 100%;
-                grid-area: a1;
-
-                .titulo_c1 {
-                    width: 100%;
-                    height: 100%;
-                    padding-top: 30px;
-
-                    & h1 {
-                        text-align: center;
-                        font-size: 25px;
-                        padding-bottom: 15px;
-                    }
-                }
-
-            }
-
-            .contenedor_2 {
-                width: 100%;
-                height: 100%;
-                background-image: url(../img/about/about2.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: $posicion_centradaxy_objetos;
-                grid-area: a2;
-            }
-
-            .contenedor_11 {
-                width: 100%;
-                height: 100%;
-                background-image: url(../img/about/black_a.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: $posicion_centradaxy_objetos;
-                grid-area: a3;
-            }
-
-            .contenedor_3 {
-                width: 100%;
-                height: 100%;
-                background-image: url(../img/about/fotoa1.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: $posicion_centradaxy_objetos;
-                grid-area: a5;
-            }
-
-            .contenedor_4 {
-                width: 100%;
-                height: 100%;
-                grid-area: a4;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-
-                .texto_c4 {
-                    width: 100%;
-                    height: 100%;
-
-                    & p {
-                        width: 80%;
-                        height: 75%;
-                        font-size: 12px;
-                        text-align: justify;
-                        padding: 10px 0px 40px 0px;
-                    }
-
-                    & a {
-                        display: none;
-                    }
-                }
-            }
-
-            .contenedor_6 {
-                width: 100%;
-                height: 100%;
-                grid-area: a7;
-                background-image: url(../img/about/me2.jpg);
-                background-position: $posicion_centradaxy_objetos;
-                background-size: cover;
-
-                .titulo_c6 {
-                    width: 150px;
-                    padding: 0px 0px 20px 10px;
-                    justify-content: flex-end;
-
-                    & h4 {
-                        padding: 5px 0px 0px 0px;
-                        font-size: 11px;
-                    }
-                }
-            }
-        }
-
-
-    }
-
-
-    /*********************SERVICIOS**********************/
-
-    .responsive_service_main {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 100px;
-
-        .services_responsive {
-            width: 100%;
-            height: 100%;
-            padding: 30px 0px 0px 0px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 10% 25% 15% 20% 20%;
-            grid-template-areas: "a1 a1"
-                "a2 a2"
-                "a3 a3"
-                "a4 a4"
-                "a5 a5";
-
-            & p {
-                font-size: 14px;
-            }
-
-            & h2 {
-                font-size: 20px;
-            }
-
-            .img_service_home {
-                display: none;
-            }
-
-            .titulo_service {
-                width: 100%;
-                height: 100%;
-                grid-area: a1;
-                margin: 0px;
-                padding: 0px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-
-                & .titulo1 {
-                    font-size: 35px;
-                    width: 400px;
-                    height: 100px;
-                    text-align: center;
-                    padding-top: 30px;
-                    margin-bottom: 10px;
-                }
-
-                & .titulo2 {
-                    font-size: 25px;
-                    width: 400px;
-                    height: 50px;
-                    text-align: center;
-                    margin: 0px;
-                }
-
-                .button_services {
-                    margin: 15px 0px;
-                }
-            }
-
-            .service1 {
-                width: 100%;
-                height: 100%;
-                grid-area: a2;
-
-                .service_web {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    padding: 15px 0px;
-
-                    .img_web {
-                        width: 90%;
-                        height: 50%;
-                        text-align: center;
-
-                        & img {
-                            width: 400px;
-                            height: 100%;
-
-                        }
-                    }
-
-                    .texto_web {
-                        width: 90%;
-                        height: 50%;
-                        margin: 0px;
-
-                        & h2 {
-                            font-size: 30px;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-
-            .service2 {
-                width: 100%;
-                height: 100%;
-                grid-area: a3;
-
-                .service_3d {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-
-                    .img_3d {
-                        width: 90%;
-                        height: 50%;
-                        text-align: center;
-
-                        & img {
-                            width: 400px;
-                            height: 100%;
-                        }
-                    }
-
-                    .texto_3d {
-                        width: 90%;
-                        height: 50%;
-                        margin: 0px;
-
-                        & h2 {
-                            font-size: 30px;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-
-            .service3 {
-                width: 100%;
-                height: 100%;
-                grid-area: a4;
-
-                .service_seo {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    padding-top: 15px;
-
-                    .img_seo {
-                        width: 90%;
-                        height: 50%;
-                        text-align: center;
-
-                        & img {
-                            width: 400px;
-                            height: 100%;
-                        }
-                    }
-
-                    .texto_seo {
-                        width: 90%;
-                        margin: 0px;
-
-                        & h2 {
-                            font-size: 30px;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-
-            .service4 {
-                width: 100%;
-                height: 100%;
-                grid-area: a5;
-
-                .service_branding {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    padding-top: 15px;
-
-                    .img_branding {
-                        width: 90%;
-                        height: 50%;
-                        text-align: center;
-
-                        & img {
-                            width: 400px;
-                            height: 100%;
-                        }
-                    }
-
-                    .texto_branding {
-                        width: 90%;
-                        margin: 0px;
-
-                        & h2 {
-                            font-size: 30px;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    /***************************CONTACTO**************/
-
-    .contacto_responsive {
-        width: 100%;
-        height: 100%;
-
-        .imagen_contacto {
-            display: none;
-        }
-
-        .form_responsive {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin: 40px 0px 10px 0px;
-            padding: 100px 40px;
-        }
-
-    }
-
-    /***************Galería***************/
-
-    .main_galeria {
-        width: 100%;
-        padding: 30px 0px 0px 0px;
-        height: 100%;
-        margin: 0px 0px 0px 0px;
-
-        .contenedor_only_img_responsive {
-            width: 100%;
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            align-items: center;
-            padding: 0px 0px 15px 0px;
-
-            & img {
-                width: 80%;
-                height: 40%;
-                padding-top: 10px;
-            }
-
-            .img_1 {
-                padding: 0px 0px;
-            }
         }
 
         .contenedor_no_responsive {
@@ -1768,14 +1387,16 @@ footer {
         }
     }
 
-    /*************FOOTER**********************/
+    /*FOOTER 486PX**********************/
 
     .footer_responsive {
         width: 100%;
+        height: 100%;
         margin-top: 120px;
     }
 
 }
+
 
 @media screen and (min-width:600px) {
 
@@ -1787,8 +1408,19 @@ footer {
     }
 
 
-    .main_home h1 {
-        transform: translateX(-10%);
+    .main_home {
+
+        width: 100px;
+        position: relative;
+        z-index: 999;
+
+        & h1 {
+            font-size: 90px;
+            width: 100%;
+            height: 100%;
+            padding-left: 40px;
+           
+        }
     }
 
     /*****************SOBRE MI*****************/
@@ -1801,7 +1433,6 @@ footer {
 
         .contenedor_responsive {
             width: 100%;
-            height: 100%;
             margin: 0px 0px;
             padding: 0px 0px;
             display: grid;
@@ -1832,7 +1463,6 @@ footer {
 
                 .titulo_c1 {
                     width: 100%;
-                    height: 100%;
                     padding-top: 20px;
 
                     & h1 {
@@ -1928,19 +1558,6 @@ footer {
 
     }
 
-
-    /**********************************************/
-
-    .header_general {
-        width: 100%;
-        height: 90px;
-        background-image: none;
-    }
-
-    .contenedor_no_responsive {
-        display: none;
-    }
-
     /*********************GALERÍA*************************/
 
     .main_galeria {
@@ -1950,8 +1567,8 @@ footer {
         margin: 0px 0px 0px 0px;
 
         .contenedor_only_img_responsive {
+
             width: 100%;
-            height: 80%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -1980,28 +1597,19 @@ footer {
     .responsive_service_main {
         width: 100%;
         height: 100%;
-        margin-bottom: 100px;
+        padding-bottom: 20px;
 
         .services_responsive {
             width: 100%;
-            height: 100%;
             padding: 10px 0px 0px 0px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 10% 25% 15% 20% 20%;
+            grid-template-rows: auto;
             grid-template-areas: "a1 a1"
                 "a2 a2"
                 "a3 a3"
                 "a4 a4"
                 "a5 a5";
-
-            & p {
-                font-size: 16px;
-            }
-
-            & h2 {
-                font-size: 20px;
-            }
 
             .titulo_service {
                 width: 100%;
@@ -2060,7 +1668,8 @@ footer {
                     .img_web {
                         width: 90%;
                         height: 50%;
-                        padding-left: 20px;
+                        text-align: center;
+                        padding: 0px 0px;
 
                         & img {
                             width: 500px;
@@ -2073,6 +1682,10 @@ footer {
                         height: 50%;
                         margin: 0px;
 
+                        p{
+                            font-size: 14px;
+                        }
+
                         & h2 {
                             font-size: 30px;
                             text-align: center;
@@ -2084,12 +1697,12 @@ footer {
 
             .service2 {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 grid-area: a3;
+                padding-top: 20px;
 
                 .service_3d {
                     width: 100%;
-                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: nowrap;
@@ -2113,6 +1726,10 @@ footer {
                         margin: 0px;
                         padding-top: 30px;
 
+                        p{
+                            font-size: 14px;
+                        }
+
                         & h2 {
                             font-size: 30px;
                             text-align: center;
@@ -2125,12 +1742,12 @@ footer {
 
             .service3 {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 grid-area: a4;
+                padding: 20px 0px;
 
                 .service_seo {
                     width: 100%;
-                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: nowrap;
@@ -2141,7 +1758,7 @@ footer {
                     .img_seo {
                         width: 90%;
                         height: 50%;
-                        padding-left: 60px;
+                        text-align: center;
 
                         & img {
                             width: 450px;
@@ -2153,6 +1770,10 @@ footer {
                         width: 90%;
                         margin: 0px;
 
+                        p{
+                            font-size: 14px;
+                        }
+
                         & h2 {
                             font-size: 30px;
                             text-align: center;
@@ -2163,18 +1784,17 @@ footer {
 
             .service4 {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 grid-area: a5;
 
                 .service_branding {
                     width: 100%;
-                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: nowrap;
                     justify-content: space-evenly;
                     align-items: center;
-                    padding-top: 15px;
+                    padding-top: 20px;
 
                     .img_branding {
                         width: 90%;
@@ -2189,6 +1809,10 @@ footer {
                     .texto_branding {
                         width: 90%;
                         margin: 0px;
+
+                        p{
+                            font-size: 14px;
+                        }
 
                         & h2 {
                             font-size: 30px;
@@ -2205,7 +1829,8 @@ footer {
 
     .contacto_responsive {
         width: 100%;
-        height: 900px;
+        height: 100%;
+        padding-top: 130px;
 
         .imagen_contacto {
             display: none;
@@ -2213,7 +1838,6 @@ footer {
 
         .form_responsive {
             width: 100%;
-            height: 100%;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -2297,38 +1921,128 @@ footer {
 
 
     /*******************SERVICIOS******************/
-
-
-
-    .responsive_service_main .services_responsive .service1 .service_web .img_web img {
-        width: 500px;
-        height: 100%;
-        padding: 0px 0px 30px 120px;
-    }
-
-    .responsive_service_main .services_responsive .service2 .service_3d .img_3d {
-        width: 90%;
-        height: 50%;
-        padding-left: 100px;
-    }
-
-
-    .responsive_service_main .services_responsive .service3 .service_seo .img_seo {
-        width: 90%;
-        height: 50%;
-        padding-left: 110px;
-    }
-
-    .img_branding {
+    .responsive_service_main{
         width: 100%;
-        height: 60%;
-        object-fit: cover;
-        padding-left: 120px;
+        height: 100%;
+
+        .services_responsive{
+            width: 100%;
+            grid-template-rows: auto;
+
+            .service1{
+                width: 100%;
+                height: auto;
+                padding: 20px 0px;
+
+                .service_web{   
+
+                    .img_web{
+                        
+                        img{
+                            width: 400px;
+                            height: auto;
+                        }
+                    }
+                    
+                    .texto_web{
+
+                        h2{
+                            font-size: 30px;
+                        }
+
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                    
+                }
+            }
+
+
+            .service2{
+                width: 100%;
+                height: auto;
+
+                .service_3d{
+
+                    .img_3d{
+
+                        img{
+                            width: 400px;
+                            height: auto;
+                        }
+                    }
+
+                    .texto_3d{
+
+                        h2{
+                            font-size: 30px;
+                        }
+    
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+
+                }
+                
+            }
+
+            .service3{
+
+                width: 100%;
+                height: auto;
+
+                .service_seo{
+
+                    .img_seo{
+
+                        img{
+                            width: 400px;
+                            height: auto;
+                        }
+                    }
+
+                    .texto_seo{
+
+                        h2{
+                            font-size: 30px;
+                        }
+
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .service4{
+
+                width: 100%;
+                height: auto;
+
+                .service_branding{
+
+                    .texto_branding{
+
+                        h2{
+                            font-size: 30px;
+                        }
+
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 
     /********************** contacto*****************************/
 
     .form_responsive {
+        height: 100%;
         margin: 40px 0px;
     }
 
@@ -2341,59 +2055,140 @@ footer {
 
 @media screen and (min-width:998px) {
 
+    /*HOME*/
+
+    .main_home {
+
+        width: 100px;
+        position: relative;
+        z-index: 999;
+
+        & h1 {
+            font-size: 120px;
+            width: 100%;
+            height: 100%;
+            padding-left: 170px;
+           
+        }
+    }
+
     /********SERVICIOS***********/
 
-    .responsive_service_main .services_responsive .service1 .service_web .img_web {
-        width: 500px;
+    .responsive_service_main{
+
+        width: 100%;
         height: 100%;
-        padding: 0px 0px 30px 0px;
 
-        & img {
-            padding-left: 0px;
+        .services_responsive{
+            width: 100%;
+            grid-template-rows: auto;
+
+            .service1{
+
+                width: 100%;
+                height: auto;
+                padding: 40px 0px;
+
+                .service_web{
+
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 0px 0px;
+
+                    .texto_web{
+                        width: 50%;
+                        height: auto;
+                    }
+
+                    .img_web{
+                        width: 45%;
+                        height: auto;
+                    }
+                }
+
+                
+            }
+
+
+            .service2{
+
+                width: 100%;
+                height: auto;
+                padding: 0px 0px;
+
+                .service_3d{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 0px 0px;
+
+                    .texto_3d{
+                        
+                        width: 50%;
+                        height: auto;
+                    }
+
+                    .img_3d{
+                        width: 45%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .service3{
+                
+                width: 100%;
+                height: auto;
+                padding: 20px 0px;
+
+                .service_seo{
+                    
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 0px 0px;
+
+                    .texto_seo{
+                        width: 50%;
+                        height: auto;
+                    }
+
+                    .img_seo{
+                        width: 45%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .service4{
+                width: 100%;
+                height: auto;
+                padding: 20px 20px;
+                margin: 0px 0px;
+
+                .service_branding{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 0px 0px;
+
+                    .texto_branding{
+                        width: 50%;
+                        height: auto;
+                    }
+
+                    .img_branding{
+                        width: 45%;
+                        height: auto;
+                    }
+                }
+            }
         }
     }
 
-    .responsive_service_main .services_responsive .service2 .service_3d .img_3d {
-        width: 90%;
-        height: 50%;
-        padding-left: 160px;
+    /***contacto**/
 
-        & img {
-            padding-left: 0px;
-        }
+    .contacto_responsive{
+        width: 100%;
+        height: 100%;
     }
-
-
-    .responsive_service_main .services_responsive .service3 .service_seo .img_seo {
-        width: 90%;
-        height: 50%;
-        padding-left: 200px;
-
-        & img {
-            padding-left: 0px;
-        }
-    }
-
-    .service_branding {
-        padding-bottom: 50px;
-
-        .img_branding {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            padding-right: 15px;
-            padding-top: 20px;
-            padding-left: 30px;
-        }
-    }
-
-    .texto_c4 p {
-        width: 75%;
-    }
-
-
 
     /*******footer*******/
 
@@ -2413,8 +2208,19 @@ footer {
         display: none;
     }
 
-    .main_home h1 {
-        transform: translateX(30%);
+    .main_home {
+
+        width: 100px;
+        position: relative;
+        z-index: 999;
+
+        & h1 {
+            font-size: 150px;
+            width: 100%;
+            height: 100%;
+            padding-left: 140px;
+           
+        }
     }
 
     .contenedor_redes {
@@ -2634,9 +2440,6 @@ footer {
 
 
     /*********************GALERÍA*************************/
-
-
-
     .main_galeria {
         width: 100%;
         height: 100%;
@@ -2765,247 +2568,28 @@ footer {
 
     /*****************seccion servicios***********************************/
 
+    .responsive_service_main{
+        
+        .services_responsive{
 
+            .titulo_service{
 
-    .responsive_service_main {
-        width: 100%;
-        height: 100%;
+                padding-top: 30px;
 
-        .services_responsive {
-            width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 15% 25% 15% 25% 20%;
-            grid-template-areas: "a1 a1"
-                "a2 a2"
-                "a3 a3"
-                "a4 a4"
-                "a5 a5";
-
-            .titulo_service {
-                width: 100%;
-                height: 100%;
-                grid-area: a1;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-
-                .img_service_home {
-                    display: block;
+                .img_service_home{
                     width: 100%;
-                    height: 50%;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
+                    height: 45%;
+                    display: block;
+                    text-align: center;
 
-                    & img {
-                        width: 70%;
+                    img{
+                        width: 400px;
                         height: auto;
                     }
                 }
-            }
 
-            /*SERVICIOWEB*/
-
-            .service1 {
-                width: 100%;
-                height: 100%;
-                grid-area: a2;
-
-                .service_web {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    padding: 0px;
-
-                    .texto_web {
-                        width: 80%;
-                        height: 90%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-
-                        & h2 {
-                            padding-bottom: 30px;
-                            font-size: 40px;
-                        }
-
-                        & p {
-                            font-size: 20px;
-                        }
-                    }
-
-                    .img_web {
-                        width: 100%;
-                        height: 90%;
-                        text-align: center;
-
-                        & img {
-                            width: 450px;
-                            height: 100%;
-                            padding-bottom: 20px;
-                        }
-                    }
-                }
-            }
-
-            /*SERVICIO MODELADO3D*/
-
-            .service2 {
-                width: 100%;
-                height: 100%;
-                grid-area: a3;
-
-                .service_3d {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    padding: 0px;
-
-                    .texto_3d {
-                        width: 80%;
-                        height: 90%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        padding-top: 0px;
-
-                        & h2 {
-                            padding-bottom: 30px;
-                            font-size: 40px;
-                        }
-
-                        & p {
-                            font-size: 20px;
-                        }
-                    }
-
-                    .img_3d {
-                        width: 100%;
-                        height: 90%;
-                        text-align: center;
-                        padding-left: 30px;
-
-                        & img {
-                            width: 500px;
-                            height: 100%;
-                        }
-
-                    }
-                }
-            }
-
-            /*SERVICIO SEO*/
-
-            .service3 {
-                width: 100%;
-                height: 100%;
-                grid-area: a4;
-
-                .service_seo {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    padding: 0px;
-
-                    .texto_seo {
-                        width: 80%;
-                        height: 90%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-
-                        & h2 {
-                            padding-top: 10px;
-                            padding-bottom: 30px;
-                            font-size: 40px;
-                        }
-
-                        & p {
-                            font-size: 18px;
-                        }
-                    }
-
-                    .img_seo {
-                        width: 100%;
-                        height: 90%;
-                        padding-left: 260px;
-
-                        & img {
-                            width: 450px;
-                            height: 100%;
-                            padding-bottom: 20px;
-                        }
-                    }
-                }
-            }
-
-            /*IDENTIDAD CORPORATIVA, BRANDING*/
-
-            .service4 {
-                width: 100%;
-                height: 100%;
-                grid-area: a5;
-
-                .service_branding {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    padding: 0px;
-
-                    .texto_branding {
-                        width: 80%;
-                        height: 90%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-
-                        & h2 {
-                            padding-bottom: 30px;
-                            font-size: 40px;
-                        }
-
-                        & p {
-                            font-size: 20px;
-                        }
-                    }
-
-                    .img_branding {
-                        width: 100%;
-                        height: 90%;
-                        text-align: center;
-
-                        & img {
-                            width: 450px;
-                            height: 100%;
-
-                        }
-                    }
+                .titulo1{
+                    padding-top: 20px;
                 }
             }
         }
@@ -3021,6 +2605,7 @@ footer {
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+        padding-top: 0px;
 
         .img_responsive_contacto {
             display: block;
@@ -3043,7 +2628,7 @@ footer {
     /****footer****/
 
     .footer_xl {
-        margin-top: 850px;
+        margin-top: 30px;
     }
 }
 
@@ -3061,23 +2646,17 @@ footer {
 
 
     .main_home {
-        margin-left: 150px;
-        width: 100px;
-        height: 0px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-content: center;
-        position: relative;
-        bottom: 700px;
-        left: 270px;
 
-        .main_home h1 {
-            margin: 0px 0px;
-            color: #fff;
+        width: 100px;
+        position: relative;
+        z-index: 999;
+
+        & h1 {
             font-size: 150px;
-            font-weight: 900;
+            width: 100%;
+            height: 100%;
+            padding-left: 200px;
+           
         }
     }
 
@@ -3221,14 +2800,18 @@ footer {
     /********************SOBRE MI******************/
 
     .main_about {
-        margin-bottom: 150px;
+        
+        width: 100%;
+        height: 100%;
 
         .contenedor_about {
+            width: 100%;
             padding-top: 0px;
 
             .contenedor_4 {
                 width: 100%;
-                height: 100%;
+                height: auto;
+                padding: 40px 0px;
 
                 .texto_c4 p {
                     height: 40%;
@@ -3238,62 +2821,19 @@ footer {
 
             }
 
+            .contenedor_6{
+                
+                .titulo_c6{
+                    width: 100%;
+                    height: 100%;
+                    
+                    h4{
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+
         }
-    }
-
-
-
-
-    /*************************************SERVICIOS*****************/
-
-    .responsive_service_main .services_responsive .titulo_service .img_service_home img {
-        width: 60%;
-        height: auto;
-    }
-
-    .extend_1200px_services {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .responsive_service_main .services_responsive .service1 .service_web {
-
-        @extend .extend_1200px_services;
-        padding: 0px 0px 0px 50px;
-
-    }
-
-    .responsive_service_main .services_responsive .service2 .service_3d {
-
-        @extend .extend_1200px_services;
-        padding: 0px 50px 0px 0px;
-
-        & .img_3d {
-            padding-left: 0px;
-        }
-    }
-
-    .responsive_service_main .services_responsive .service3 .service_seo {
-
-        @extend .extend_1200px_services;
-        padding: 0px 0px 0px 50px;
-
-        .img_seo {
-            padding-left: 0px;
-            padding-left: 80px;
-        }
-
-    }
-
-    .responsive_service_main .services_responsive .service4 .service_branding {
-
-        @extend .extend_1200px_services;
-        padding: 0px 50px 0px 0px;
     }
 
     /*********************GALERÍA*************************/
@@ -3306,12 +2846,6 @@ footer {
     }
 
     /*CONTACTO*/
-
-    .main_contacto {
-        padding-top: 100px;
-    }
-
-    /*contactoooooooo*/
 
     .main_contacto {
         padding-top: 0px;
@@ -3350,192 +2884,94 @@ footer {
 @media screen and (min-width:1300px) {
 
 
+    /*HOME*/
+
+    .main_home {
+
+        width: 100px;
+        position: relative;
+        z-index: 999;
+
+        & h1 {
+            font-size: 150px;
+            width: 100%;
+            height: 100%;
+            padding-left: 240px;
+           
+        }
+    }
+
     .footer_xl {
         margin-top: 10px;
     }
 
-    .responsive_service_main .services_responsive .titulo_service {
+    
+}
 
+@media screen and (min-width:1800px){
+
+    .header_home {
+        width: 100%;
+        height: 1300px;
+        background-image: url(../img/img_home/home.png);
+        background-color: #5BD3C7;
+        background-position: center center;
+        background-size: cover;
+    }
+
+
+    .main_home {
+
+        width: 100px;
+        position: relative;
+        z-index: 999;
+        bottom: 800px;
+
+        & h1 {
+            font-size: 200px;
+            width: 100%;
+            height: 100%;
+            padding-left: 400px;
+           
+        }
+    }
+
+    /*sobremi*/
+
+    .header_general {
+        width: 100%;
+        height: 70px;
+        background-image: none;
+        background-color: #fff;
+    }
+
+    .main_about{
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        
-        & .img_service_home{
-            width: 50%;
-            height: 50%;
-
-            & img{
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        
-      }
-
-    .responsive_service_main .services_responsive .service1 .service_web {
-        padding: 0px 0px 0px 50px;
-
-        & .img_web {
-
-            width: 70%;
-            height: 100%;
-            padding: 20px 0px 0px 0px;
-        }
+        padding: 40px 0px;
     }
 
-    .responsive_service_main .services_responsive .service3 .service_seo {
-        padding: 0px 0px 0px 50px;
+    /*galería*/
 
-        & .img_seo {
-            width: 70%;
-            height: 100%;
-        }
-    }
-}
-
-@media screen and (min-width:1400px) {
-    .footer_xl {
-        margin-top: 600px;
-    }
-
-    .card {
-        box-shadow: 5px 5px 5px #C1C1C1;
-    }
-}
-
-@media screen and (min-width:1500px) {
-
-
-    /*******************home****************/
-
-    .main_home h1 {
+    .main_galeria{
         width: 100%;
-        height: auto;
-        transform: translateX(-150%);
-    }
+        height: 100%;
 
-    /*contenedor 2*/
+        .contenedor_no_responsive{
 
-
-    .main_galeria {
-
-        .contenedor_only_img_responsive {
-            display: none;
-        }
-
-        .contenedor_no_responsive {
-            display: block;
-
-            .contenedor1 {
-
-                .imgsec {
-                    width: 50%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    .img2 {
-                        width: 50%;
-                        height: 100%;
-                    }
-
-                    .img3 {
-                        width: 50%;
-                        height: 100%;
-                        padding-top: 0px;
-                        padding-left: 10px;
-                    }
-
-                    .img_26 {
-                        object-position: 80% center;
-                    }
-                }
-            }
-
-            .contenedor2 {
-
-                .imgsec {
-
-                    .img5 {
-                        width: 50%;
-                        height: 100%;
-                        padding-top: 0px;
-                    }
-
-                    .img6 {
-                        width: 50%;
-                        height: 100%;
-                        padding-top: 0px;
-                        padding-left: 10px;
-                    }
-                }
-
-            }
-
+            width: 100%;
         }
     }
 
+    /*contacto*/
 
-
-    /******************sobre mi*******************/
-
-    .main_about {
-
-        & .contenedor_about {
-
-            .contenedor_4 {
-
-                & .texto_c4 {
-
-                    & p {
-                        padding-bottom: 0px;
-                        height: 40%;
-                    }
-                }
-
-            }
-
-            & .contenedor_6 {
-
-                & .titulo_c6 {
-
-                    h4 {
-                        padding: 5px 5px;
-                        text-align: center;
-                        width: 50%;
-                        height: 8%;
-                        font-size: 14px;
-                        background-color: #fff;
-                        font-weight: 500;
-                        border-radius: 12px;
-                    }
-                }
-            }
-        }
+    .main_contacto{
+        width: 100%;
+        height: 100%;
     }
-
-    /*******************servicios**********/
-
-
-    .responsive_service_main .services_responsive .titulo_service .img_service_home img {
-        width: 50%;
-        height: auto;
-    }
-
-    .footer_xl {
-        margin-top: 20px;
-    }
-
-
 }
+
+
 
 
 
