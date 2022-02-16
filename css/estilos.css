@@ -509,9 +509,16 @@ footer {
             color: #353755; }
 
 /******************MEDIA QUERIES******************/
-@media screen and (max-width: 320px) {
-  .main_home h1 {
-    transform: translate(-115%); }
+@media screen and (max-width: 375px) {
+  .main_home {
+    width: 100px;
+    position: relative;
+    z-index: 999;
+    right: 50px; }
+    .main_home h1 {
+      font-size: 70px;
+      width: 100%;
+      height: 100%; }
   .contenedor_4 .texto_c4 p {
     font-size: 9px; }
   /*seccion servicios*/
@@ -521,7 +528,7 @@ footer {
     background-image: none;
     background-color: #fff; }
   .responsive_service_main {
-    padding-top: 10px;
+    padding-top: 30px;
     width: 100%;
     height: 100%; }
     .responsive_service_main .services_responsive {
@@ -533,69 +540,198 @@ footer {
       .responsive_service_main .services_responsive .titulo_service {
         grid-area: a1;
         width: 100%;
-        height: 100%; }
+        height: auto;
+        padding: 0px 0px; }
+        .responsive_service_main .services_responsive .titulo_service .img_service_home {
+          display: none; }
         .responsive_service_main .services_responsive .titulo_service .titulo1 {
+          font-size: 20px; }
+        .responsive_service_main .services_responsive .titulo_service .titulo2 {
+          font-size: 20px; }
+        .responsive_service_main .services_responsive .titulo_service .button_services {
+          width: 150px;
+          height: 40px;
           font-size: 15px; }
       .responsive_service_main .services_responsive .service1 {
         grid-area: a2;
         width: 100%;
-        height: 100%;
-        padding: 0px;
-        padding: 0px; }
+        height: auto;
+        justify-content: center;
+        align-content: center;
+        text-align: center; }
         .responsive_service_main .services_responsive .service1 .service_web {
-          padding: 0px 0px;
-          margin: 0px 0px; }
-          .responsive_service_main .services_responsive .service1 .service_web .texto_web h2 {
-            font-size: 20px; }
-          .responsive_service_main .services_responsive .service1 .service_web .texto_web p {
-            font-size: 13px; }
-        .responsive_service_main .services_responsive .service1 .img_web {
-          display: none; }
+          width: 100%;
+          height: auto; }
+          .responsive_service_main .services_responsive .service1 .service_web .texto_web {
+            width: 100%;
+            height: auto;
+            text-align: justify;
+            align-self: center;
+            padding: 20px 20px;
+            margin: 0px 0px; }
+            .responsive_service_main .services_responsive .service1 .service_web .texto_web h2 {
+              font-size: 20px; }
+            .responsive_service_main .services_responsive .service1 .service_web .texto_web p {
+              width: 100%;
+              height: auto;
+              font-size: 13px;
+              margin-bottom: 0px; }
+          .responsive_service_main .services_responsive .service1 .service_web .img_web {
+            display: none; }
       .responsive_service_main .services_responsive .service2 {
         width: 100%;
-        height: 100%;
+        height: auto;
         grid-area: a3; }
         .responsive_service_main .services_responsive .service2 .service_3d {
-          margin: 0px 0px; }
-          .responsive_service_main .services_responsive .service2 .service_3d .texto_3d h2 {
-            font-size: 20px; }
-          .responsive_service_main .services_responsive .service2 .service_3d .texto_3d p {
-            font-size: 13px; }
+          width: 100%;
+          height: auto; }
+          .responsive_service_main .services_responsive .service2 .service_3d .texto_3d {
+            width: 100%;
+            height: auto;
+            margin: 0px 0px;
+            padding: 20px 20px; }
+            .responsive_service_main .services_responsive .service2 .service_3d .texto_3d h2 {
+              font-size: 20px; }
+            .responsive_service_main .services_responsive .service2 .service_3d .texto_3d p {
+              font-size: 13px;
+              width: 100%;
+              height: auto; }
           .responsive_service_main .services_responsive .service2 .service_3d .img_3d {
             display: none; }
       .responsive_service_main .services_responsive .service3 {
         width: 100%;
-        height: 100%;
-        grid-area: a4; }
-        .responsive_service_main .services_responsive .service3 .service_seo .texto_seo h2 {
-          font-size: 20px; }
-        .responsive_service_main .services_responsive .service3 .service_seo .texto_seo p {
-          font-size: 13px; }
+        height: auto;
+        grid-area: a4;
+        margin: 0px 0px; }
+        .responsive_service_main .services_responsive .service3 .service_seo {
+          width: 100%;
+          height: auto; }
+          .responsive_service_main .services_responsive .service3 .service_seo .texto_seo {
+            width: 100%;
+            height: auto;
+            margin: 0px 0px;
+            padding: 20px 20px; }
+            .responsive_service_main .services_responsive .service3 .service_seo .texto_seo h2 {
+              font-size: 20px; }
+            .responsive_service_main .services_responsive .service3 .service_seo .texto_seo p {
+              font-size: 13px; }
         .responsive_service_main .services_responsive .service3 .img_seo {
           display: none; }
       .responsive_service_main .services_responsive .service4 {
         grid-area: a5;
         width: 100%;
-        height: 100%; }
-        .responsive_service_main .services_responsive .service4 .service_branding .texto_branding h2 {
-          font-size: 20px; }
-        .responsive_service_main .services_responsive .service4 .service_branding .texto_branding p {
-          font-size: 13px; }
+        height: auto;
+        margin: 0px 0px; }
+        .responsive_service_main .services_responsive .service4 .service_branding {
+          width: 100%;
+          height: auto; }
+          .responsive_service_main .services_responsive .service4 .service_branding .texto_branding {
+            width: 100%;
+            height: 100%;
+            margin: 0px 0px;
+            padding: 20px 20px; }
+            .responsive_service_main .services_responsive .service4 .service_branding .texto_branding h2 {
+              font-size: 20px;
+              text-align: center; }
+            .responsive_service_main .services_responsive .service4 .service_branding .texto_branding p {
+              font-size: 13px; }
         .responsive_service_main .services_responsive .service4 .img_branding {
           display: none; }
   /**********sobremi************/
-  .contenedor_4 {
+  .main_responsive {
     width: 100%;
-    height: 30%; }
-    .contenedor_4 .texto_c4 {
-      padding-bottom: 70px; }
-      .contenedor_4 .texto_c4 p {
+    height: 100%;
+    margin: 0px;
+    padding: 20px 20px; }
+    .main_responsive .contenedor_responsive {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-auto-rows: 450px;
+      grid-template-areas: "a1 a1" "a2 a2" "a3 a3" "a4 a5" "a6 a6" "a7 a7";
+      margin: 0px;
+      padding: 0px; }
+      .main_responsive .contenedor_responsive .contenedor_1 {
         width: 100%;
-        margin: 0px 0px; }
-      .contenedor_4 .texto_c4 a {
+        height: auto;
+        grid-area: a1; }
+      .main_responsive .contenedor_responsive .contenedor_2 {
         display: none; }
-  .titulo_c6 h4 {
-    display: none; } }
+      .main_responsive .contenedor_responsive .contenedor_3 {
+        width: 100%;
+        height: 100%;
+        grid-area: a6; }
+      .main_responsive .contenedor_responsive .contenedor_4 {
+        width: 100%;
+        height: 100%;
+        grid-area: a3;
+        padding: 20px 20px; }
+        .main_responsive .contenedor_responsive .contenedor_4 .texto_c4 {
+          width: 100%;
+          height: auto; }
+          .main_responsive .contenedor_responsive .contenedor_4 .texto_c4 p {
+            width: 100%;
+            height: 100%;
+            font-size: 13px; }
+          .main_responsive .contenedor_responsive .contenedor_4 .texto_c4 .button_about {
+            display: none; }
+      .main_responsive .contenedor_responsive .contenedor_5 {
+        grid-area: a5;
+        width: 100%;
+        height: 100%;
+        padding: 20px 20px;
+        background: none; }
+      .main_responsive .contenedor_responsive .contenedor_6 {
+        width: 100%;
+        height: 100%;
+        grid-area: a4; }
+        .main_responsive .contenedor_responsive .contenedor_6 .titulo_c6 {
+          width: 100%;
+          height: 100%; }
+          .main_responsive .contenedor_responsive .contenedor_6 .titulo_c6 h4 {
+            font-size: 10px; }
+      .main_responsive .contenedor_responsive .contenedor_11 {
+        width: 100%;
+        height: 100%;
+        grid-area: a2; }
+      .main_responsive .contenedor_responsive .contenedor_8 {
+        width: 100%;
+        height: 100%;
+        grid-area: a7; }
+      .main_responsive .contenedor_responsive .contenedor_9 {
+        display: none; }
+  /*galeria**/
+  .main_galeria {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px; }
+    .main_galeria .contenedor_only_img_responsive {
+      width: 100%;
+      height: auto;
+      text-align: center; }
+      .main_galeria .contenedor_only_img_responsive img {
+        width: 300px;
+        height: auto;
+        padding-top: 10px; }
+    .main_galeria .contenedor_no_responsive {
+      display: none; }
+  /*contacto*/
+  .contacto_responsive {
+    width: 100%;
+    height: 100%; }
+    .contacto_responsive .img_responsive_contacto {
+      display: none; }
+    .contacto_responsive .form_responsive {
+      width: 100%;
+      padding: 80px 40px; }
+  /*footer*/
+  .footer_contacto--375 {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px; }
+    .footer_contacto--375 .contenedor_redes {
+      width: 100%;
+      height: auto; } }
 
 @media screen and (min-width: 468px) {
   .header_home {

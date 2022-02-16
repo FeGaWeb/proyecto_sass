@@ -714,17 +714,28 @@ footer {
 
 /******************MEDIA QUERIES******************/
 
-@media screen and (max-width:320px) {
 
-    .main_home h1 {
-        transform: translate(-115%);
+@media screen and (max-width:375px) {
+
+    .main_home {
+
+        width: 100px;
+        position: relative;
+        z-index: 999;
+        right: 50px;
+
+        & h1 {
+            font-size: 70px;
+            width: 100%;
+            height: 100%;
+           
+        }
     }
 
     .contenedor_4 .texto_c4 p {
         font-size: 9px;
     }
 
-    
 
     /*seccion servicios*/
 
@@ -736,7 +747,8 @@ footer {
     }
 
     .responsive_service_main {
-        padding-top: 10px;
+
+        padding-top: 30px;
         width: 100%;
         height: 100%;
 
@@ -754,9 +766,24 @@ footer {
                 .titulo_service {
                     grid-area: a1;
                     width: 100%;
-                    height: 100%;
+                    height: auto;
+                    padding: 0px 0px;
+
+                    .img_service_home{
+                        display: none;
+                    }
         
-                    & .titulo1{
+                    .titulo1{
+                        font-size: 20px;
+                    }
+
+                    .titulo2{
+                        font-size: 20px;
+                    }
+
+                    .button_services{
+                        width: 150px;
+                        height: 40px;
                         font-size: 15px;
                     }
                 }
@@ -764,42 +791,63 @@ footer {
                 .service1 {
                     grid-area: a2;
                     width: 100%;
-                    height: 100%;
-                    padding: 0px;
-                    padding: 0px;
+                    height: auto;
+                    justify-content: center;
+                    align-content: center;
+                    text-align: center;
         
                     .service_web{
                         
-                        padding: 0px 0px ;
-                        margin: 0px 0px;
+                        width: 100%;
+                        height: auto;
+                       
 
                         .texto_web{
                             
+                            width: 100%;
+                            height: auto;
+                            text-align: justify;
+                            align-self: center;
+                            padding: 20px 20px;
+                            margin: 0px 0px;
+
                             h2{
                                 font-size: 20px;
                             }
 
                             p{
+                                width: 100%;
+                                height: auto;
                                 font-size: 13px;
+                                margin-bottom: 0px;
                             }
+                        }
+
+                        & .img_web {
+                            display: none;
                         }
                     }
         
-                    & .img_web {
-                        display: none;
-                    }
+                    
                 }
         
 
                 .service2 {
                     width: 100%;
-                    height: 100%;
+                    height: auto;
                     grid-area: a3;
+
         
                     .service_3d {
-                        margin: 0px 0px;
+                        width: 100%;
+                        height: auto;
 
                         .texto_3d{
+
+                            width: 100%;
+                            height: auto;
+                            margin: 0px 0px;
+                            padding: 20px 20px;
 
                             h2{
                                 font-size: 20px;
@@ -807,6 +855,8 @@ footer {
 
                             p{
                                 font-size: 13px;
+                                width: 100%;
+                                height: auto;
                             }
                         }
 
@@ -820,13 +870,21 @@ footer {
         
                 .service3 {
                     width: 100%;
-                    height: 100%;
+                    height: auto;
                     grid-area: a4;
+                    margin: 0px 0px;
 
                     .service_seo{
 
+                        width: 100%;
+                        height: auto;
+
                         .texto_seo{
-                            
+                            width: 100%;
+                            height: auto;
+                            margin: 0px 0px;
+                            padding: 20px 20px;
+
                             h2{
                                 font-size: 20px;
                             }
@@ -845,14 +903,24 @@ footer {
                 .service4 {
                     grid-area: a5;
                     width: 100%;
-                    height: 100%;
+                    height: auto;
+                    margin: 0px 0px;
 
                     .service_branding{
 
+                        width: 100%;
+                        height: auto;
+
                         .texto_branding{
+                            
+                            width: 100%;
+                            height: 100%;
+                            margin: 0px 0px;
+                            padding: 20px 20px;
 
                             h2{
                                 font-size: 20px;
+                                text-align: center;
                             }
 
                             p{
@@ -867,38 +935,164 @@ footer {
                 }
         }
 
-        
-       
-
-       
     }
 
     /**********sobremi************/
 
-    .contenedor_4 {
+    .main_responsive{
         width: 100%;
-        height: 30%;
+        height: 100%;
+        margin: 0px;
+        padding: 20px 20px;
 
-        .texto_c4 {
-            padding-bottom: 70px;
+        .contenedor_responsive{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-auto-rows: 450px;
+            grid-template-areas: "a1 a1"
+                                 "a2 a2"
+                                 "a3 a3"
+                                 "a4 a5"
+                                 "a6 a6"
+                                 "a7 a7";
+            margin: 0px;
+            padding: 0px;
 
-            & p {
+            .contenedor_1{
                 width: 100%;
-                margin: 0px 0px;
+                height: auto;
+                grid-area: a1;
             }
 
-            & a {
+            .contenedor_2{
                 display: none;
             }
+
+            .contenedor_3{
+                width: 100%;
+                height: 100%;
+                grid-area: a6;
+            }
+
+            .contenedor_4{
+                width: 100%;
+                height: 100%;
+                grid-area: a3;
+                padding: 20px 20px;
+
+                .texto_c4{
+                    width: 100%;
+                    height: auto;
+
+                    p{
+                        width: 100%;
+                        height: 100%;
+                        font-size: 13px;
+                    }
+
+                    .button_about{
+                        display: none;
+                    }
+                }
+            }
+
+            .contenedor_5{
+                grid-area: a5;
+                width: 100%;
+                height: 100%;
+                padding: 20px 20px;
+                background: none;
+            }
+
+            .contenedor_6{
+                width: 100%;
+                height: 100%;
+                grid-area: a4;
+
+                .titulo_c6{
+                    width: 100%;
+                    height: 100%;
+
+                    h4{
+                        font-size: 10px;
+                        
+                    }
+                }
+            }
+
+            .contenedor_11{
+                width: 100%;
+                height: 100%;
+                grid-area: a2;
+            }
+
+            .contenedor_8{
+                width: 100%;
+                height: 100%;
+                grid-area: a7;
+            }
+
+            .contenedor_9{
+                display: none;
+            }
+
+
         }
     }
 
-    .titulo_c6 {
-        h4 {
+    /*galeria**/
+
+    .main_galeria{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0px;
+
+        .contenedor_only_img_responsive{
+            width: 100%;
+            height: auto;
+            text-align: center;
+
+            img{
+                width: 300px;
+                height: auto;
+                padding-top: 10px;
+            }
+        }
+
+        .contenedor_no_responsive{
             display: none;
         }
     }
 
+    /*contacto*/
+
+    .contacto_responsive{
+        width: 100%;
+        height: 100%;
+
+        .img_responsive_contacto{
+            display: none;
+        }
+        
+        .form_responsive{
+            width: 100%;
+            padding: 80px 40px;
+        }
+    }
+
+    /*footer*/
+
+    .footer_contacto--375{
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+
+        .contenedor_redes{
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 @media screen and (min-width:468px) {
@@ -1396,7 +1590,6 @@ footer {
     }
 
 }
-
 
 @media screen and (min-width:600px) {
 
