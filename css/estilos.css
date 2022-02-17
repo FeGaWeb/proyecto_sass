@@ -72,15 +72,7 @@ footer {
     width: 50%;
     height: auto;
     margin: 250px 0px 200px 0px; }
-  .main_contacto #nombres {
-    width: 90%;
-    height: 35px;
-    margin-bottom: 25px;
-    font-size: 13px;
-    padding-left: 15px;
-    border: none;
-    border-bottom: 3px solid #0b4868; }
-  .main_contacto #email {
+  .main_contacto #nombres, .main_contacto #email, .main_contacto #planes {
     width: 90%;
     height: 35px;
     margin-bottom: 25px;
@@ -89,13 +81,6 @@ footer {
     border: none;
     border-bottom: 3px solid #0b4868; }
   .main_contacto #planes {
-    width: 90%;
-    height: 35px;
-    margin-bottom: 25px;
-    font-size: 13px;
-    padding-left: 15px;
-    border: none;
-    border-bottom: 2px solid #0b4868;
     background: none; }
   .main_contacto #areatexto {
     width: 90%;
@@ -509,7 +494,7 @@ footer {
             color: #353755; }
 
 /******************MEDIA QUERIES******************/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 479px) {
   .main_home {
     width: 100px;
     position: relative;
@@ -665,14 +650,15 @@ footer {
         width: 100%;
         height: 100%;
         grid-area: a3;
-        padding: 20px 20px; }
+        padding: 10px 0px; }
         .main_responsive .contenedor_responsive .contenedor_4 .texto_c4 {
           width: 100%;
           height: auto; }
           .main_responsive .contenedor_responsive .contenedor_4 .texto_c4 p {
             width: 100%;
             height: 100%;
-            font-size: 13px; }
+            font-size: 13px;
+            margin: 0px 0px; }
           .main_responsive .contenedor_responsive .contenedor_4 .texto_c4 .button_about {
             display: none; }
       .main_responsive .contenedor_responsive .contenedor_5 {
@@ -723,7 +709,7 @@ footer {
       display: none; }
     .contacto_responsive .form_responsive {
       width: 100%;
-      padding: 80px 40px; }
+      padding: 80px 40px 80px 60px; }
   /*footer*/
   .footer_contacto--375 {
     width: 100%;
@@ -733,7 +719,7 @@ footer {
       width: 100%;
       height: auto; } }
 
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 480px) {
   .header_home {
     width: 100%;
     background-image: url(../img/img_home/home.png);
@@ -742,9 +728,10 @@ footer {
   .main_home {
     width: 100px;
     position: relative;
-    z-index: 999; }
+    z-index: 999;
+    padding-left: 40px; }
     .main_home h1 {
-      font-size: 70px;
+      font-size: 80px;
       width: 100%;
       height: 100%; }
   footer {
